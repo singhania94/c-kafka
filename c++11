@@ -1,0 +1,11 @@
+export SGSBASE=/xenv/gcc_gnu/X/4.9.2/ia64
+export CCSBASE=${SGSBASE}
+export CPLUS_BASE=${SGSBASE}
+export CCROOTDIR=${SGSBASE}
+export CCINCDIR=${CPLUS_BASE}/include/c++/4.9.2
+export PATH=${CPLUS_BASE}/bin:${PATH}
+export LD_LIBRARY_PATH=${CPLUS_BASE}/lib:${LD_LIBRARY_PATH}
+
+INCDIRS="-I${CCINCDIR} -I/xenv/Boost/X/1.55.0/BINGRP_rh5_64/include"
+
+make
